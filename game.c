@@ -1,12 +1,12 @@
 /*
-    problem:
-     we will create a program that generates a random number
-     and asks the player to guess it. if the player's guess
+     Problem:
+     We will create a program that generates a random number
+     and asks the player to guess it. If the player's guess
      is higher than the actual number, the program displays
-     "enter a lower number". similarly if the user guess is
-     too low, the program prints "enter a higher number".
+     "Enter a lower number". Similarly if the user guess is
+     too low, the program prints "Enter a higher number".
 
-     when the user guesses the correct number the program
+     When the user guesses the correct number the program
      displays the number of guesses the player used to get
      to the number.
 */
@@ -25,16 +25,16 @@ int main(){
      // keep running the loop until the number is guessed
 
      do {
-         printf("guess a number between 1 and 100\n");
+         printf("Guess a number between 1 and 100\n");
          scanf("%d", &guess);
          if (guess>number){
-             printf("enter a lower number\n");
+             printf("Enter a lower number\n");
          }
          else if (guess<number){
-             printf("enter a higher number\n");
+             printf("Enter a higher number\n");
          }
          else {
-             printf("your guess is correct in %d attempts\n", nguess);
+             printf("Congrats! Your guess is correct in %d attempts\n", nguess);
          }
          nguess++;
      } while (guess!=number);
